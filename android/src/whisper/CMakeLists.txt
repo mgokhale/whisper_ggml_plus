@@ -11,6 +11,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fdata-sections -ffunction-sections"
 add_compile_definitions(_XOPEN_SOURCE=600)
 add_compile_definitions(_GNU_SOURCE)
 
+# Version defines (from src/include/whisper-version.h)
+add_compile_definitions(GGML_VERSION="1.8.3")
+add_compile_definitions(GGML_COMMIT="7aa8818")
+add_compile_definitions(WHISPER_VERSION="1.8.3")
+
 # Include directories — corrected for nested whisper.cpp v1.8.x layout
 include_directories(src)                    # whisper.h at top level
 include_directories(src/include)            # public whisper headers

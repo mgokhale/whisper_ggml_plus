@@ -15,6 +15,10 @@
 #include "json/json.hpp"
 #include <stdio.h>
 
+#ifdef __ANDROID__
+#include <android/log.h>
+#endif
+
 using json = nlohmann::json;
 
 struct whisper_params
