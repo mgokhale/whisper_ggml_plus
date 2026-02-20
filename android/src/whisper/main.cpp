@@ -128,8 +128,8 @@ json transcribe(json jsonBody)
         }
         
         whisper_context_params cparams = whisper_context_default_params();
-        cparams.use_gpu = true; 
-        cparams.flash_attn = true;
+        cparams.use_gpu = false;
+        cparams.flash_attn = false;
 
         g_ctx = whisper_init_from_file_with_params(params.model.c_str(), cparams);
         if (g_ctx != nullptr) {
