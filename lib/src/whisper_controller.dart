@@ -35,6 +35,7 @@ class WhisperController {
     int threads = 6,
     bool isTranslate = false,
     bool speedUp = false,
+    String prompt = '',
   }) async {
     await initModel(model);
 
@@ -76,6 +77,7 @@ class WhisperController {
           isRealtime: true,
           diarize: diarize,
           speedUp: speedUp,
+          prompt: prompt,
         ),
         modelPath: _modelPath,
       );
