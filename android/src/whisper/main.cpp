@@ -1,3 +1,4 @@
+#include "main.h"
 #include "src/whisper.h"
 
 #define DR_WAV_IMPLEMENTATION
@@ -261,7 +262,7 @@ json transcribe(json jsonBody)
 
 extern "C"
 {
-    char *request(char *body)
+    FUNCTION_ATTRIBUTE char *request(char *body)
     {
         try {
             json jsonBody = json::parse(body);
