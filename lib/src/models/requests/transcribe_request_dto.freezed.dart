@@ -37,6 +37,7 @@ mixin _$TranscribeRequestDto {
   bool get diarize;
   @JsonKey(name: 'speed_up')
   bool get speedUp;
+  String get prompt;
 
   /// Create a copy of TranscribeRequestDto
   /// with the given fields replaced by the non-null parameter values.
@@ -76,7 +77,8 @@ mixin _$TranscribeRequestDto {
             (identical(other.isRealtime, isRealtime) ||
                 other.isRealtime == isRealtime) &&
             (identical(other.diarize, diarize) || other.diarize == diarize) &&
-            (identical(other.speedUp, speedUp) || other.speedUp == speedUp));
+            (identical(other.speedUp, speedUp) || other.speedUp == speedUp) &&
+            (identical(other.prompt, prompt) || other.prompt == prompt));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -96,11 +98,12 @@ mixin _$TranscribeRequestDto {
       noFallback,
       isRealtime,
       diarize,
-      speedUp);
+      speedUp,
+      prompt);
 
   @override
   String toString() {
-    return 'TranscribeRequestDto(audio: $audio, model: $model, isTranslate: $isTranslate, threads: $threads, isVerbose: $isVerbose, language: $language, isSpecialTokens: $isSpecialTokens, isNoTimestamps: $isNoTimestamps, nProcessors: $nProcessors, splitOnWord: $splitOnWord, noFallback: $noFallback, isRealtime: $isRealtime, diarize: $diarize, speedUp: $speedUp)';
+    return 'TranscribeRequestDto(audio: $audio, model: $model, isTranslate: $isTranslate, threads: $threads, isVerbose: $isVerbose, language: $language, isSpecialTokens: $isSpecialTokens, isNoTimestamps: $isNoTimestamps, nProcessors: $nProcessors, splitOnWord: $splitOnWord, noFallback: $noFallback, isRealtime: $isRealtime, diarize: $diarize, speedUp: $speedUp, prompt: $prompt)';
   }
 }
 
@@ -124,7 +127,8 @@ abstract mixin class $TranscribeRequestDtoCopyWith<$Res> {
       @JsonKey(name: 'no_fallback') bool noFallback,
       @JsonKey(name: 'is_realtime') bool isRealtime,
       bool diarize,
-      @JsonKey(name: 'speed_up') bool speedUp});
+      @JsonKey(name: 'speed_up') bool speedUp,
+      String prompt});
 }
 
 /// @nodoc
@@ -154,6 +158,7 @@ class _$TranscribeRequestDtoCopyWithImpl<$Res>
     Object? isRealtime = null,
     Object? diarize = null,
     Object? speedUp = null,
+    Object? prompt = null,
   }) {
     return _then(_self.copyWith(
       audio: null == audio
@@ -212,6 +217,10 @@ class _$TranscribeRequestDtoCopyWithImpl<$Res>
           ? _self.speedUp
           : speedUp // ignore: cast_nullable_to_non_nullable
               as bool,
+      prompt: null == prompt
+          ? _self.prompt
+          : prompt // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -323,7 +332,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             @JsonKey(name: 'no_fallback') bool noFallback,
             @JsonKey(name: 'is_realtime') bool isRealtime,
             bool diarize,
-            @JsonKey(name: 'speed_up') bool speedUp)?
+            @JsonKey(name: 'speed_up') bool speedUp,
+            String prompt)?
         $default, {
     required TResult orElse(),
   }) {
@@ -344,7 +354,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             _that.noFallback,
             _that.isRealtime,
             _that.diarize,
-            _that.speedUp);
+            _that.speedUp,
+            _that.prompt);
       case _:
         return orElse();
     }
@@ -379,7 +390,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             @JsonKey(name: 'no_fallback') bool noFallback,
             @JsonKey(name: 'is_realtime') bool isRealtime,
             bool diarize,
-            @JsonKey(name: 'speed_up') bool speedUp)
+            @JsonKey(name: 'speed_up') bool speedUp,
+            String prompt)
         $default,
   ) {
     final _that = this;
@@ -399,7 +411,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             _that.noFallback,
             _that.isRealtime,
             _that.diarize,
-            _that.speedUp);
+            _that.speedUp,
+            _that.prompt);
       case _:
         throw StateError('Unexpected subclass');
     }
@@ -433,7 +446,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             @JsonKey(name: 'no_fallback') bool noFallback,
             @JsonKey(name: 'is_realtime') bool isRealtime,
             bool diarize,
-            @JsonKey(name: 'speed_up') bool speedUp)?
+            @JsonKey(name: 'speed_up') bool speedUp,
+            String prompt)?
         $default,
   ) {
     final _that = this;
@@ -453,7 +467,8 @@ extension TranscribeRequestDtoPatterns on TranscribeRequestDto {
             _that.noFallback,
             _that.isRealtime,
             _that.diarize,
-            _that.speedUp);
+            _that.speedUp,
+            _that.prompt);
       case _:
         return null;
     }
@@ -477,7 +492,8 @@ class _TranscribeRequestDto extends TranscribeRequestDto {
       @JsonKey(name: 'no_fallback') required this.noFallback,
       @JsonKey(name: 'is_realtime') required this.isRealtime,
       required this.diarize,
-      @JsonKey(name: 'speed_up') required this.speedUp})
+      @JsonKey(name: 'speed_up') required this.speedUp,
+      this.prompt = ''})
       : super._();
   factory _TranscribeRequestDto.fromJson(Map<String, dynamic> json) =>
       _$TranscribeRequestDtoFromJson(json);
@@ -519,6 +535,9 @@ class _TranscribeRequestDto extends TranscribeRequestDto {
   @override
   @JsonKey(name: 'speed_up')
   final bool speedUp;
+  @override
+  @JsonKey()
+  final String prompt;
 
   /// Create a copy of TranscribeRequestDto
   /// with the given fields replaced by the non-null parameter values.
@@ -563,7 +582,8 @@ class _TranscribeRequestDto extends TranscribeRequestDto {
             (identical(other.isRealtime, isRealtime) ||
                 other.isRealtime == isRealtime) &&
             (identical(other.diarize, diarize) || other.diarize == diarize) &&
-            (identical(other.speedUp, speedUp) || other.speedUp == speedUp));
+            (identical(other.speedUp, speedUp) || other.speedUp == speedUp) &&
+            (identical(other.prompt, prompt) || other.prompt == prompt));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -583,11 +603,12 @@ class _TranscribeRequestDto extends TranscribeRequestDto {
       noFallback,
       isRealtime,
       diarize,
-      speedUp);
+      speedUp,
+      prompt);
 
   @override
   String toString() {
-    return 'TranscribeRequestDto(audio: $audio, model: $model, isTranslate: $isTranslate, threads: $threads, isVerbose: $isVerbose, language: $language, isSpecialTokens: $isSpecialTokens, isNoTimestamps: $isNoTimestamps, nProcessors: $nProcessors, splitOnWord: $splitOnWord, noFallback: $noFallback, isRealtime: $isRealtime, diarize: $diarize, speedUp: $speedUp)';
+    return 'TranscribeRequestDto(audio: $audio, model: $model, isTranslate: $isTranslate, threads: $threads, isVerbose: $isVerbose, language: $language, isSpecialTokens: $isSpecialTokens, isNoTimestamps: $isNoTimestamps, nProcessors: $nProcessors, splitOnWord: $splitOnWord, noFallback: $noFallback, isRealtime: $isRealtime, diarize: $diarize, speedUp: $speedUp, prompt: $prompt)';
   }
 }
 
@@ -613,7 +634,8 @@ abstract mixin class _$TranscribeRequestDtoCopyWith<$Res>
       @JsonKey(name: 'no_fallback') bool noFallback,
       @JsonKey(name: 'is_realtime') bool isRealtime,
       bool diarize,
-      @JsonKey(name: 'speed_up') bool speedUp});
+      @JsonKey(name: 'speed_up') bool speedUp,
+      String prompt});
 }
 
 /// @nodoc
@@ -643,6 +665,7 @@ class __$TranscribeRequestDtoCopyWithImpl<$Res>
     Object? isRealtime = null,
     Object? diarize = null,
     Object? speedUp = null,
+    Object? prompt = null,
   }) {
     return _then(_TranscribeRequestDto(
       audio: null == audio
@@ -701,6 +724,10 @@ class __$TranscribeRequestDtoCopyWithImpl<$Res>
           ? _self.speedUp
           : speedUp // ignore: cast_nullable_to_non_nullable
               as bool,
+      prompt: null == prompt
+          ? _self.prompt
+          : prompt // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }

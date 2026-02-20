@@ -112,6 +112,9 @@ json transcribe(json jsonBody)
     params.split_on_word = jsonBody["split_on_word"];
     params.diarize = jsonBody["diarize"];
     params.speed_up = jsonBody["speed_up"];
+    if (jsonBody.contains("prompt") && jsonBody["prompt"].is_string()) {
+        params.prompt = jsonBody["prompt"];
+    }
 
     json jsonResult;
     jsonResult["@type"] = "transcribe";
@@ -182,7 +185,12 @@ json transcribe(json jsonBody)
     wparams.split_on_word = params.split_on_word;
     wparams.audio_ctx = params.speed_up ? 768 : 0; // Use smaller audio context for speedUp
     wparams.single_segment = false;
-    
+
+    // Initial prompt for domain vocabulary biasing
+    if (!params.prompt.empty()) {
+        wparams.initial_prompt = params.prompt.c_str();
+    }
+
     if (is_turbo) {
         wparams.beam_search.beam_size = 3;
         fprintf(stderr, "[DEBUG] Turbo model detected - using beam search (beam_size=3)\n");

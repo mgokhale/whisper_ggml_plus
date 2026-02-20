@@ -30,6 +30,7 @@ abstract class TranscribeRequestDto
     @JsonKey(name: 'is_realtime') required bool isRealtime,
     required bool diarize,
     @JsonKey(name: 'speed_up') required bool speedUp,
+    @Default('') String prompt,
   }) = _TranscribeRequestDto;
 
   /// Convert [request] to TranscribeRequestDto with specified [modelPath]
@@ -51,6 +52,7 @@ abstract class TranscribeRequestDto
       noFallback: request.noFallback,
       diarize: request.diarize,
       speedUp: request.speedUp,
+      prompt: request.prompt,
       isRealtime: request.isRealtime,
     );
   }

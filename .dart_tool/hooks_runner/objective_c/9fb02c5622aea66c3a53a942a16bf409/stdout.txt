@@ -1,0 +1,60 @@
+Running `(cd /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/; TMPDIR=/var/folders/31/ybkjcrgn78v2tsckl571ksww0000gq/T/ PATH=/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/mandar/development/flutter/bin:/Users/mandar/.local/bin:/Users/mandar/.antigravity/antigravity/bin:/Users/mandar/.nvm/versions/node/v24.12.0/bin:/usr/local/opt/python/bin:/usr/local/opt/mongodb@3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mandar/data/mongo-3.0.6:/Users/mandar/.asdf/shims:/usr/local/go/bin:/Users/mandar/go/bin:/Users/mandar/Library/Android/sdk/platform-tools HOME=/Users/mandar /opt/homebrew/share/flutter/bin/cache/dart-sdk/bin/dart --packages=/private/tmp/whisper_ggml_plus_fork/.dart_tool/package_config.json /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/objective_c/9fb02c5622aea66c3a53a942a16bf409/hook.dill --config=/private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/objective_c/9fb02c5622aea66c3a53a942a16bf409/input.json )`.
+INFO: 2026-02-20 13:26:05.637033: Running `which clang`.
+
+INFO: 2026-02-20 13:26:05.666621: Running `/usr/bin/clang --version`.
+
+INFO: 2026-02-20 13:26:06.020155: Running `/usr/bin/clang --version`.
+
+INFO: 2026-02-20 13:26:06.085985: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/include/dart_api_dl.c -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-02-20 13:26:06.086409: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/objective_c.c -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o
+
+INFO: 2026-02-20 13:26:06.086751: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/input_stream_adapter.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-20 13:26:06.086824: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/objective_c.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o
+INFO: 2026-02-20 13:26:06.086886: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/observer.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o
+INFO: 2026-02-20 13:26:06.086946: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/ns_number.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o
+INFO: 2026-02-20 13:26:06.087025: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/protocol.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o
+INFO: 2026-02-20 13:26:06.087079: Running: /usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -x objective-c -fobjc-arc -c /Users/mandar/.pub-cache/hosted/pub.dev/objective_c-9.2.3/src/objective_c_bindings_generated.m -fpic -I src -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-20 13:26:06.203258: 
+INFO: 2026-02-20 13:26:06.203335: 
+INFO: 2026-02-20 13:26:06.203360: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o
+INFO: 2026-02-20 13:26:06.203471: 
+INFO: 2026-02-20 13:26:06.203481: 
+INFO: 2026-02-20 13:26:06.203488: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o
+
+INFO: 2026-02-20 13:26:06.228734: 
+INFO: 2026-02-20 13:26:06.228771: 
+INFO: 2026-02-20 13:26:06.228782: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o
+
+INFO: 2026-02-20 13:26:06.230396: 
+INFO: 2026-02-20 13:26:06.230423: 
+INFO: 2026-02-20 13:26:06.230433: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/test/util.c.o
+
+INFO: 2026-02-20 13:26:06.238821: 
+INFO: 2026-02-20 13:26:06.238853: 
+INFO: 2026-02-20 13:26:06.238862: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o
+
+INFO: 2026-02-20 13:26:06.490132: 
+INFO: 2026-02-20 13:26:06.490168: 
+INFO: 2026-02-20 13:26:06.490176: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o
+
+INFO: 2026-02-20 13:26:06.493034: 
+INFO: 2026-02-20 13:26:06.493062: 
+INFO: 2026-02-20 13:26:06.493071: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o
+
+INFO: 2026-02-20 13:26:06.497286: 
+INFO: 2026-02-20 13:26:06.497313: 
+INFO: 2026-02-20 13:26:06.497321: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-20 13:26:06.508584: 
+INFO: 2026-02-20 13:26:06.508615: 
+INFO: 2026-02-20 13:26:06.508624: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-20 13:26:06.508842: Running: /usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/test/util.c.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o -o /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/objective_c.dylib
+
+INFO: 2026-02-20 13:26:06.670799: 
+INFO: 2026-02-20 13:26:06.670853: 
+INFO: 2026-02-20 13:26:06.670862: Generated /private/tmp/whisper_ggml_plus_fork/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/objective_c.dylib
+

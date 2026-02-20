@@ -19,6 +19,7 @@ abstract class TranscribeRequest with _$TranscribeRequest {
     @Default(false) bool noFallback,
     @Default(false) bool diarize,
     @Default(false) bool speedUp,
+    @Default('') String prompt,
     @Default(null) Stream<String>? realtimeStream,
   }) = _TranscribeRequest;
   const TranscribeRequest._();
