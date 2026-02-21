@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 project(whisper_flutter_library LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 20)
 
-# Optimization flags
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -fdata-sections -ffunction-sections")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fdata-sections -ffunction-sections")
+# Optimization flags — O2 for correctness; no -ffunction-sections (breaks GGML fn-ptr dispatch)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
 
 # POSIX
 add_compile_definitions(_XOPEN_SOURCE=600)
