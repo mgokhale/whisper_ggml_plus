@@ -16,6 +16,9 @@ add_compile_definitions(GGML_VERSION="1.8.3")
 add_compile_definitions(GGML_COMMIT="7aa8818")
 add_compile_definitions(WHISPER_VERSION="1.8.3")
 
+# Enable CPU backend — without this, ggml_backend_dev_by_type(CPU) returns NULL
+add_compile_definitions(GGML_USE_CPU)
+
 # Include directories — corrected for nested whisper.cpp v1.8.x layout
 include_directories(src)                    # whisper.h at top level
 include_directories(src/include)            # public whisper headers
